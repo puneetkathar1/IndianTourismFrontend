@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Indian Tourism</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="icon" type="image/png" href="images/ashoka.png">
+  </head>
+  <body>
+    <nav style="background-color: #08d9d6" class="navbar navbar-expand-lg navbar-light bg-dark">
+      <img  style="margin-left: 1%" src="images/ashoka.png" alt="">
+      <a class="navbar-brand" style="font-size: 4rem; color: #ff2e63; margin-right: 25%; margin-left: 1%; font-family: 'Dancing Script', cursive; letter-spacing: 3px" href="#">Indian Tourism!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" style="color: #08d9d6" id="navbarNavDropdown">
+        <ul class="navbar-nav" style="font-size: 1.2rem" style="color: #08d9d6">
+          <li class="nav-item active" style="color: #08d9d6">
+            <a class="nav-link" href="#" style="color: #08d9d6">Home</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" style="background-color: #343a40; border: none" data-toggle="modal" data-target="#exampleModal">
+              <a class="nav-link" href="#" style="color: #08d9d6">Advisory</a>
+            </button>
+
+          </li>
+          <li class="nav-item">
+            <button type="button" style="background-color: #343a40; border: none" data-toggle="modal" data-target="#exampleModal">
+              <a class="nav-link" href="#" style="color: #08d9d6">Book Now</a>
+            </button>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" style="color: #08d9d6" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <button type="button" style="background-color: #343a40; border: none" data-toggle="modal" data-target="#exampleModal">
+                <a class="nav-link" href="#" style="color: #08d9d6">Rates</a>
+              </button>
+              <button type="button" style="background-color: #343a40; border: none" data-toggle="modal" data-target="#exampleModal">
+                <a class="nav-link" href="#" style="color: #08d9d6">Callback</a>
+              </button>
+              <button type="button" style="background-color: #343a40; border: none" data-toggle="modal" data-target="#exampleModal">
+                <a class="nav-link" href="#" style="color: #08d9d6">Special Offers</a>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<style>
+  .fade-in, .navbar-brand {
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+-moz-animation: fadeIn ease 5s;
+-o-animation: fadeIn ease 5s;
+-ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+</style>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get In Touch With Us!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.9s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 2s;
+      animation-name: fade;
+      animation-duration: 2s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+
+    <h2 style="margin-top: 4rem; color: #ff2e63; font-size: 3rem; font-family: 'Dancing Script', cursive; text-align: center">India Rarely Changes & Rarely Forgets.</h2>
+    <p></p>
+
+    <div style="margin-top: 5rem;" class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 10</div>
+      <img src="images/taj.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 10</div>
+      <img src="images/temple.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 10</div>
+      <img src="images/sardar.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 10</div>
+      <img src="images/hotel.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 10</div>
+      <img src="images/indiagate.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 10</div>
+      <img src="images/kerala.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 10</div>
+      <img src="images/hotel2.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 10</div>
+      <img src="images/goa.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 10</div>
+      <img src="images/ganages.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 10</div>
+      <img src="images/fort.jpg" style="width:100%; height: 600px">
+      <div class="text"></div>
+    </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <br><br><br>
+    <div style="background-color: #252a34">
+      <br>
+      <p style="text-align: center; color: #08d9d6; font-family: 'Dancing Script', cursive; font-size: 3rem" class="h4">Indian Tourism</p>
+      <br>
+      <p class="text-center" style="color: #eaeaea; font-size: 1.1rem; font-family: 'Raleway', sans-serif; margin-left: 10rem; margin-right: 10rem">Indian Tourism is the rapid growing industry. India is a country which has several unique temples famous for its cultural heritage, various wildlife sanctuaries and it is surrounded by Indian Ocean, Himalayas, Bay of Bengal and Arabian Sea. It’s a Multilingual Country where people speak different languages. Every foreigner has a dream to visit this fascinating country. It has many tourist attractions like waterfalls, Deserts, Famous river bodies like Ganga, Yamuna, and Indus etc. <br> <br>
+
+      India Tourism Campaign was promoted by many Indian Celebrities and its tagline is “Atithi Devo Bhava” which means honoring the guest as God. This happens only in India. Whenever a guest enters in India, it’s our prime duty to treat them with respect and provide best services. Indians treat their foreign guests with enthusiasm. India Tourism is today one of the largest service industry. Its campaign “Incredible India” was developed by Ministry of Tourism. This industry is based on certain standards which are: Safai (Cleanliness), Surakshaa (Security), Sahyog (Cooperation), Suchna (Information), Sanrachna (Infrastructure), Swagat (Welcome), and Suvidha (Facilitation).</p>
+<br>
+    </div>
+<br><br>
+<div class="card-deck" style="justify-content: center">
+  <div class="card" style="min-width: 18rem;max-width: 18rem; margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/delhi.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Delhi</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">With old monuments and busy neighbourhoods subtly merging with a vibrant...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/agra.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Agra</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">The city of the Taj Mahal, one of the seven wonders of the world, Agra in...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/jaipur.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Jaipur</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">The city of palaces and forts, interspersed with historical monuments and...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 3rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/mumbai.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Mumbai</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Mumbai, the capital of Maharashtra, attracts dreamers with sky-high...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem; margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/varanasi.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Varanasi</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">One of the oldest living inhabitations of the world, the sacred city of...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/chennai.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Chennai</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Ancient temples, vibrant arts, natural wonders and a bustling culinary...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/kolkata.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Kolkata</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Almost like a colonial matriarch nurturing her heritage roots, the city of...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 3rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/bengalaru.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Bengaluru</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">A city catering to almost all the creature comforts of a metropolitan, a...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem; margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/hyderabad.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Hyderabad</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">A vibrant city with the imposing Charminar at its heart, Hyderabad, the...
+
+Falaknuma palace</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/kochi.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Kochi</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">A vibrant potpourri of art, culture, food, carnivals and festivals, Kochi,...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/udaipur.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Udaipur</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Popularly known as the City of Lakes, serene Udaipur is the crowning jewel...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 3rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/goa2.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Goa</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">The pocket-sized paradise of Goa is a traveller's dream. Sun, sea, sand,...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem; margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/shimla.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Shimla</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Enveloped in mist, nestled within dense forests and silhouetted against...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/srinagar.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Srinagar</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Picturesque and enchanting, Srinagar is cradled high in the lofty green...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/leh.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Leh-Ladakh</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">A surreal landscape surrounded by the sky-piercing peaks of the...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 3rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/manali.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Manali</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">The magnetic town of Manali beckons to the soul of adventurers, nature...
+
+</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem; margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/jaisalmer.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Jaisalmer</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Rolling hills of honey-hued sand dunes, vast barren expanses, contrasting...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/ooyu.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Ooty</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">A quaint hill town, perched against the backdrop of Doddabetta (2,637 m),...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/Khajraho.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Khajraho</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">If stones could speak, the Khajuraho temples would create melodies!...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 3rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/Amritsar.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Amritsar</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">A bustling city with an indomitable spirit, Amritsar holds one of the...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem; margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/Chittorgarh.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Chittorgarh</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Perched on a dramatic uprise of hills, Chittorgarh, in Rajasthan, is the...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/gangtok.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Gangtok</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Perched on steeply-tiered hills in the eastern Himalayas, the picturesque...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 2.5rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/darjeeling.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Darjeeling</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Sprawled over a steep mountain ridge and dotted with unending stretches of...</p>
+    </div>
+  </div>
+  <div class="card" style="min-width: 18rem;max-width: 18rem;margin: 3rem;">
+    <img style="height: 15rem" class="card-img-top" src="images/kanyakumari.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h3 style="text-align: center; font-family: 'Dancing Script', cursive; color: #08d9d6">Kanyakumari</h3>
+      <p class="card-text" style="font-family: 'Raleway', sans-serif;">Poised at the confluence of the Indian Ocean, the Bay of Bengal and the...</p>
+    </div>
+  </div>
+
+</div>
+
+<div style="background-color: #252a34">
+  <br>
+  <p style="text-align: center; color: #ff2e63; font-family: 'Dancing Script', cursive; font-size: 3rem" class="h4"> India is a place where color is doubly bright! <br> </p>
+  <br>
+</div>
+<br><br><br>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div style="width: 50%; height: 50%; margin-left: 25%" class="carousel-item active">
+      <img  class="d-block w-100" src="images/newtonq.jpg" alt="First slide">
+    </div>
+    <div style="width: 50%; height: 50%; margin-left: 25%" class="carousel-item">
+      <img  class="d-block w-100" src="images/markq.jpg" alt="Second slide">
+    </div>
+    <div style="width: 50%; height: 50%; margin-left: 25%" class="carousel-item">
+      <img  class="d-block w-100" src="images/roaminq.jpg" alt="Third slide">
+    </div>
+    <div style="width: 50%; height: 50%; margin-left: 25%" class="carousel-item">
+      <img  class="d-block w-100" src="images/martinq.jpg" alt="Fourth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<footer style="margin-top: 15rem; background-color: #252a34" class=" text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase"></h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" style="color:#08d9d6 ">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color:#08d9d6 "> Copyright</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase"></h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" style="color:#08d9d6 ">Terms</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color:#08d9d6 ">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="color:#08d9d6 " >
+    <br>
+    © 2020 Copyright Indian Tourism
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
